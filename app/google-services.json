@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "698875879938",
+    "project_id": "oliapp-4a96a",
+    "storage_bucket": "oliapp-4a96a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698875879938:android:5a69e84d4f47cb0fc0bd1b",
+        "android_client_info": {
+          "package_name": "com.oliapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698875879938-97rdd6eadp2r29mfrmsp8ir2b42tj0r1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.oliapp",
+            "certificate_hash": "81d1bcc0e0b7764f7e72409cbbb1292994180fa6"
+          }
+        },
+        {
+          "client_id": "698875879938-6ffboemdr0od6ale4bpdj29ao1affjai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3vx374kq-yEyJfwTfMywfX98ZSYTL8Fg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698875879938-6ffboemdr0od6ale4bpdj29ao1affjai.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
