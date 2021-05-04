@@ -6,83 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/mainBTNLogout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="24dp"
-        android:backgroundTint="@color/teal_700"
-        android:fontFamily="@font/comfortaa_light"
-        android:text="LOGOUT"
-        android:textColor="@color/purple_200"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:iconTint="@color/purple_500"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainEmailID" />
-
-    <FrameLayout
-        android:id="@+id/logInHeader"
-        android:layout_width="409dp"
-        android:layout_height="200dp"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="408dp"
+        android:layout_height="63dp"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:menu="@menu/bottom_menu" />
 
-        <ImageView
-            android:id="@+id/oliCSUSMBackground"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:contentDescription="@string/csusm"
-            android:scaleType="fitXY"
-            android:visibility="visible"
-            app:srcCompat="@drawable/sunrise_from_mcmahan1" />
-
-        <ImageView
-            android:id="@+id/loginScreenTxt"
-            android:layout_width="168dp"
-            android:layout_height="94dp"
-            android:layout_gravity="end"
-            android:contentDescription="@string/todo"
-            android:scaleType="centerCrop"
-            android:visibility="visible"
-            app:srcCompat="@drawable/oli_flyer_edit1" />
-    </FrameLayout>
-
-    <TextView
-        android:id="@+id/logInMessage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="You are logged in."
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logInHeader" />
-
-    <TextView
-        android:id="@+id/mainUserID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="TextView"
+    <fragment
+        android:id="@+id/fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logInMessage" />
-
-    <TextView
-        android:id="@+id/mainEmailID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainUserID" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/my_nav" />
 </androidx.constraintlayout.widget.ConstraintLayout>
